@@ -10,11 +10,11 @@ def get_usd_rate():
     except:
         return 5.0
 
-def load_custom_css(file_name):
+def ui_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-def load_custom_html(file_name):
+def ux_html(file_name):
     with open(file_name, "r", encoding="utf-8") as f:
         html_code = f.read()
         components.html(html_code, height=150)
