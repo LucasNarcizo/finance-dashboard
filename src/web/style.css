@@ -1,0 +1,80 @@
+/* =========================================
+   1. ESTILO DO BANNER (HTML PERSONALIZADO)
+   ========================================= */
+
+.banner-container {
+    background-color: #1e293b; 
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.banner-title {
+    color: #ffffff !important; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.banner-subtitle {
+    color: #94a3b8;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   2. CUSTOMIZAÇÃO DE COMPONENTES STREAMLIT
+   ========================================= */
+
+/* Estilo para os Cards de Métricas (Valores) */
+[data-testid="stMetricValue"] {
+    font-size: 1.8rem !important;
+    color: #3b82f6 !important; 
+    font-weight: bold;
+}
+
+/* Estilo para os Rótulos das Métricas (Títulos dos cards) */
+[data-testid="stMetricLabel"] {
+    font-size: 1rem !important;
+    color: #64748b !important;
+    text-transform: uppercase;
+}
+
+/* Fundo e largura da Barra Lateral (Sidebar) */
+section[data-testid="stSidebar"] {
+    background-color: #1c63aab4;
+    border-right: 1px solid #e2e8f0;
+}
+
+
+.stButton>button {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #10b981 !important; 
+    color: white !important;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #059669 !important; 
+    border: none;
+}
+
+/* Ajuste nos inputs da Sidebar para ficarem mais limpos */
+.stTextInput>div>div>input, .stNumberInput>div>div>input {
+    border-radius: 6px;
+}
+
+h2, h3 {
+    color: #a0a8b4;
+    font-weight: 600;
+    padding-top: 1rem;
+}
