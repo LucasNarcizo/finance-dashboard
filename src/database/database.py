@@ -2,8 +2,6 @@ import os
 from dotenv import load_dotenv
 from supabase import create_client
 
-
-
 def get_supabase_client():
     load_dotenv()
     url = os.getenv("SUPABASE_URL")
