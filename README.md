@@ -1,6 +1,6 @@
 ### Dashboard Financeiro
 
-# Este repositório documenta a construção de um Dashboard Financeiro em Python. Mais do que uma ferramenta final, este projeto é um laboratório de estudos em Engenharia de Software, focado em superar desafios de arquitetura, UX customizada e persistência de dados.
+Este repositório documenta a construção de um Dashboard Financeiro em Python. Mais do que uma ferramenta final, este projeto é um laboratório de estudos em Engenharia de Software, focado em superar desafios de arquitetura, UX customizada e persistência de dados.
 
 ## 🛠️ O que está sendo construído?
 O objetivo é criar uma plataforma onde o usuário possa gerenciar transações financeiras com uma interface de alta fidelidade, fugindo dos padrões básicos de bibliotecas prontas.
