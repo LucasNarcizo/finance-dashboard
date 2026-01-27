@@ -1,26 +1,24 @@
-# finance-dashboard
-(Estarei separando o desenvolvimento em fases para ser melhor para explicar quais complicações eu passei para poder explicar deu um jeito melhor para quem estiver lendo entender)
+O Finanças Pro é uma aplicação web de gestão financeira pessoal desenvolvida para oferecer uma experiência intuitiva e moderna. O projeto foca em visualização de dados em tempo real, permitindo que o usuário controle entradas, saídas e visualize a saúde financeira através de gráficos interativos.
 
-Fase 1: Comecei fazendo a base do Python com a API AwesomeAPI(Para ver cotação do dolar e futuramente outras moedas em uma aba especifica)
+🚀 Funcionalidades
+Painel de Controle Superior: Menu expansível e compacto para lançamentos de transações, otimizando o espaço de visualização.
 
-Primeiro erro: Durante o desenvolvimento eu fiz o arquivo de HTML e CSS, e por conta do streamlit ele estava reconhecendo o HTML como um codigo de exposição no caso ele acho que eu estava importando um codigo para mostra pra quem abrisse a pagina, coisa que não era pra esta acontecendo acabei fazendo de outro modo para importar e conectar junto ao Streamlit que acabei usando as seguinte linha de codigos
+Gestão de Transações: Cadastro de Entradas e Saídas integrado ao banco de dados Supabase.
 
-Antes:
-def load_html(file_name):
-    with open(file_name, "r", encoding="utf-8") as file_to_read:
-        st.markdown(file_to_read.read(), unsafe_allow_html=True)
+Visualização Dinâmica: Gráficos de pizza (donut) com suporte a customização de cores em tempo real pelo usuário.
 
-Depois:(onde coloquei um import para conseguir isolar o HTML do Streamlit)
-import streamlit.components.v1 as components
+Design Customizado: Interface com modo escuro, utilizando CSS avançado para efeitos de gradiente e profundidade (Glassmorphism).
 
-def load_html(file_name):
-    with open(file_name, "r", encoding="utf-8") as file_to_read:
-        html_code = file_to_read.read()
-        components.html(html_code, height=150)
+Indicadores em Tempo Real: Monitoramento de cotações externas e saldos totais.
 
+🛠️ Tecnologias Utilizadas
 
-Termino da fase 1 do projeto, fiz a base do Dashboard onde eu conseguir arrumar os arquivos separando pastas tive diversos problemas de importação mas fui arrumando 1 por 1, mudei nome de algumas variaveis pra ficar legivel pra mim e para quem estiver lendo,
-a partir de amanha pretendo começar mexer na parte visual do projeto no html e no css e colocar um novo grafico de gastos.
+Linguagem: Python
 
-Fase 2:
+Interface: Streamlit
 
+Visualização: Plotly Express
+
+Backend/Database: Supabase (PostgreSQL)
+
+Estilização: CSS3 Customizado
