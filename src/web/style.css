@@ -1,15 +1,14 @@
 /* Importação de fonte moderna */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-/* 1. Ajustes Globais */
+/* 1. Alteração da Pagina toda */
 .stApp {
     font-family: 'Inter', sans-serif;
-    background:linear-gradient(90deg,rgba(65, 42, 155, 1) 0%, rgba(87, 139, 199, 1) 50%, rgba(157, 83, 237, 1) 100%);
+    background-color: rgb(68, 11, 158);
 }
 
 /* Cabeçalho do Dashboard */
 .stApp .stMarkdown div.banner-container {
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
     padding: 40px !important;
     border-radius: 16px !important;
     text-align: center !important;
@@ -18,13 +17,13 @@
 }
 
 .stApp .stMarkdown h1.banner-title {
-    color: #76968e !important;
+    color: #03464e !important;
     margin: 0 !important;
     font-size: 3rem !important;
 }
 
 .stApp .stMarkdown p.banner-subtitle {
-    color: #5f738b !important;
+    color: #03464e !important;
     font-size: 1.2rem !important;
 }
 
@@ -32,6 +31,28 @@
     padding-top: 150px !important; 
 }
 
+div[data-testid="stExpander"] {
+    background-color: #0f172a !important; /* Azul quase preto sólido */
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-top: -10px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+
+}
+/* 1. Reduz a altura do cabeçalho do expander */
+.streamlit-expanderHeader {
+    background-color: rgba(30, 41, 59, 0.7) !important;
+    border-radius: 8px !important;
+    padding: 5px 15px !important;
+}
+
+/*Remove o espaçamento do próprio */
+.block-container {
+    padding-top: 3rem !important;
+    padding-bottom: 0rem !important;
+}
+
+/* 3. Estiliza os campos para ficarem mais baixos (compactos) */
 
 /*Cards de valores*/
 [data-testid="stMetric"] {
@@ -47,25 +68,6 @@
     font-weight: 700 !important;
 }
 
-/*Sidebar*/
-section[data-testid="stSidebar"] {
-    background: linear-gradient(135deg, #7051ED 0%, #445E82 50%);
-}
-
-.stButton>button {
-    background-color: #197a5a !important;
-    color: white !important;
-    border: none !important;
-    padding: 10px 20px !important;
-    font-weight: 600 !important;
-    transition: all 0.2s ease !important;
-}
-
-.stButton>button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(117, 13, 22, 0.4);
-}
-
 .stApp .stMarkdown div.card-entradas {
     background-color: #c7710f !important;
     padding: 25px !important;
@@ -73,4 +75,13 @@ section[data-testid="stSidebar"] {
     margin-bottom: 20px !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
     color: rgb(168, 47, 47) !important;
+}
+/*Grafico*/
+
+.stPlotlyChart {
+    background: linear-gradient(135deg, #11284d 0%, #1d2736 100%) !important;
+    padding: 20px !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
 }

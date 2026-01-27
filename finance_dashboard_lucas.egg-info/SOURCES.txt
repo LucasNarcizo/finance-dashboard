@@ -1,0 +1,17 @@
+README.md
+setup.py
+finance_dashboard_lucas.egg-info/PKG-INFO
+finance_dashboard_lucas.egg-info/SOURCES.txt
+finance_dashboard_lucas.egg-info/dependency_links.txt
+finance_dashboard_lucas.egg-info/requires.txt
+finance_dashboard_lucas.egg-info/top_level.txt
+src/__init__.py
+src/app/__init__.py
+src/app/app.py
+src/app/components/__init__.py
+src/app/components/charts.py
+src/database/__init__.py
+src/database/database.py
+src/utils/__init__.py
+src/utils/utils.py
+src/web/__init__.py
