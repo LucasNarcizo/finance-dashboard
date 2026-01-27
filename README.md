@@ -1,6 +1,6 @@
 O Finanças Pro é uma aplicação web de gestão financeira pessoal desenvolvida para oferecer uma experiência intuitiva e moderna. O projeto foca em visualização de dados em tempo real, permitindo que o usuário controle entradas, saídas e visualize a saúde financeira através de gráficos interativos.
 
-🚀 Funcionalidades
+##🚀 Funcionalidades
 Painel de Controle Superior: Menu expansível e compacto para lançamentos de transações, otimizando o espaço de visualização.
 
 Gestão de Transações: Cadastro de Entradas e Saídas integrado ao banco de dados Supabase.
@@ -11,7 +11,7 @@ Design Customizado: Interface com modo escuro, utilizando CSS avançado para efe
 
 Indicadores em Tempo Real: Monitoramento de cotações externas e saldos totais.
 
-🛠️ Tecnologias Utilizadas
+##🛠️ Tecnologias Utilizadas
 
 Linguagem: Python
 
