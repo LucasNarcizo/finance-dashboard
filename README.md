@@ -1,24 +1,27 @@
-O Finanças Pro é uma aplicação web de gestão financeira pessoal desenvolvida para oferecer uma experiência intuitiva e moderna. O projeto foca em visualização de dados em tempo real, permitindo que o usuário controle entradas, saídas e visualize a saúde financeira através de gráficos interativos.
+Este repositório documenta a construção de um Dashboard Financeiro em Python. Mais do que uma ferramenta final, este projeto é um laboratório de estudos em Engenharia de Software, focado em superar desafios de arquitetura, UX customizada e persistência de dados.
 
-🚀 Funcionalidades
-Painel de Controle Superior: Menu expansível e compacto para lançamentos de transações, otimizando o espaço de visualização.
+🛠️ O que está sendo construído?
+O objetivo é criar uma plataforma onde o usuário possa gerenciar transações financeiras com uma interface de alta fidelidade, fugindo dos padrões básicos de bibliotecas prontas.
 
-Gestão de Transações: Cadastro de Entradas e Saídas integrado ao banco de dados Supabase.
+✅ Já implementado (Sprint Atual):
+Refatoração de UI: Migração da Sidebar para um menu superior expansível (st.expander) para melhor aproveitamento de tela.
 
-Visualização Dinâmica: Gráficos de pizza (donut) com suporte a customização de cores em tempo real pelo usuário.
+Componentização de Gráficos: Criação de funções modulares para gráficos de pizza/donut utilizando Plotly.
 
-Design Customizado: Interface com modo escuro, utilizando CSS avançado para efeitos de gradiente e profundidade (Glassmorphism).
+Estilização com CSS Scoping: Uso de seletores CSS avançados (:has) para isolar o estilo dos containers sem afetar o background global.
 
-Indicadores em Tempo Real: Monitoramento de cotações externas e saldos totais.
+Persistência de Dados: Conexão funcional com Supabase para Create e Read de transações.
 
-🛠️ Tecnologias Utilizadas
+🔄 Em progresso (Bugs & Ajustes):
+Sincronização de Cores: Ajuste fino entre os seletores de cor do usuário e a aplicação imediata nos gráficos via color_discrete_map.
 
-Linguagem: Python
+Otimização de Layout: Ajuste de paddings e margens nos containers para evitar sobreposição de elementos.
 
-Interface: Streamlit
+🚀 Próximos Passos (Backlog):
+[ ] Implementação de Gráfico de Barras para histórico mensal.
 
-Visualização: Plotly Express
+[ ] Criação de Cards de métricas (Saldo, Entradas e Saídas) com lógica de cálculo direto no DataFrame.
 
-Backend/Database: Supabase (PostgreSQL)
+[ ] Filtros avançados por data e categoria.
 
-Estilização: CSS3 Customizado
+[ ] Exportação de relatórios em CSV/PDF.
